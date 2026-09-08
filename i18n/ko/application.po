@@ -634,3 +634,177 @@ msgstr "초기화"
 
 msgid "Solution"
 msgstr "정답 보기"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Configure the App"
+msgstr "앱 설정"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid ""
+"Pick one of the community-contributed translations.\n"
+"Some translations are not complete yet."
+msgstr ""
+"커뮤니티가 기여한 번역 중 하나를 선택합니다.\n"
+"일부 번역은 아직 미완성일 수 있습니다."
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "About community translations"
+msgstr "커뮤니티 번역 안내"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "0% of text translated. 0/0 lessons fully translated."
+msgstr "텍스트 0% 번역됨. 0/0개 수업 번역 완료."
+
+#: ui/components/popups/SettingsPopup.gd:145
+msgid "{percentage}% of text translated. {completed}/{total} lessons fully translated."
+msgstr "텍스트 {percentage}% 번역됨. {completed}/{total}개 수업 번역 완료."
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Text Size"
+msgstr "글자 크기"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Make all text in the app bigger or smaller."
+msgstr "앱의 모든 글자 크기를 키우거나 줄입니다."
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Sample text"
+msgstr "샘플 텍스트"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Scroll speed"
+msgstr "스크롤 속도"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Change how fast the page scrolls when you use the mouse wheel or touchpad."
+msgstr "마우스 휠이나 터치패드 사용 시 페이지 스크롤 속도를 조절합니다."
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Max framerate"
+msgstr "최대 프레임 속도"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid ""
+"Limit how many frames per second the app draws.\n"
+"Lower values use less resources, which helps when running in the browser, but the app may feel less smooth."
+msgstr ""
+"앱이 초당 렌더링할 프레임 수를 제한합니다.\n"
+"낮은 값을 사용하면 리소스를 절약하여 브라우저에서 실행할 때 도움이 되지만, 덜 부드럽게 느껴질 수 있습니다."
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "60 FPS"
+msgstr "60 FPS"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "30 FPS"
+msgstr "30 FPS"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "No Limit"
+msgstr "제한 없음"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Lower contrast"
+msgstr "낮은 대비"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid ""
+"Reduce the contrast between the text and the background.\n"
+"This makes the app easier on your eyes."
+msgstr ""
+"텍스트와 배경 사이의 대비를 줄입니다.\n"
+"눈의 피로를 덜어줍니다."
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Dyslexia Font"
+msgstr "난독증용 폰트"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid ""
+"Switch to a font designed to be easier to read for people with dyslexia.\n"
+"This does not work with languages like Chinese and Japanese."
+msgstr ""
+"난독증이 있는 사람도 읽기 편하게 설계된 글꼴로 전환합니다.\n"
+"한국어, 중국어, 일본어 등 일부 언어에서는 작동하지 않을 수 있습니다."
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Enabled"
+msgstr "사용"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Close"
+msgstr "닫기"
+
+#: ui/components/popups/SettingsPopup.tscn
+msgid "Apply"
+msgstr "적용"
+
+#: ui/components/popups/TranslationInfoPopup.tscn
+msgid "Community Translations"
+msgstr "커뮤니티 번역"
+
+#: ui/components/popups/TranslationInfoPopup.tscn
+msgid ""
+"The languages available in this app are translated by community volunteers. They are not officially supported, and some translations may be incomplete or missing entirely.\n"
+"\n"
+"If you see text that is still in English while using another language, this is expected. It means that part of the app has not been translated yet.\n"
+"\n"
+"If you want to help make the translations more complete, you are welcome to contribute. You can find instructions on how to do so here: [b][url=https://github.com/GDQuest/learn-gdscript-translations/#readme]How to contribute translations[/url][/b]\n"
+"\n"
+"Thank you to everyone who has contributed translations so far."
+msgstr ""
+"이 앱에서 지원되는 언어들은 커뮤니티 자원봉사자분들이 번역해 주신 것입니다. 공식적으로 지원되는 것은 아니며, 일부 번역은 미완성이거나 누락되었을 수 있습니다.\n"
+"\n"
+"다른 언어를 사용하는 중에도 영문으로 표시되는 텍스트가 있다면 정상적인 동작입니다. 앱의 해당 부분이 아직 번역되지 않았음을 의미합니다.\n"
+"\n"
+"더 완전한 번역이 될 수 있도록 돕고 싶으시다면 언제든 기여를 환영합니다. 기여 방법에 대한 안내는 여기에서 확인하실 수 있습니다: [b][url=https://github.com/GDQuest/learn-gdscript-translations/#readme]번역 기여 가이드[/url][/b]\n"
+"\n"
+"지금까지 번역에 기여해 주신 모든 분들께 감사드립니다."
+
+#: ui/components/popups/TranslationInfoPopup.tscn
+msgid "OK"
+msgstr "확인"
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Report an issue"
+msgstr "문제 신고"
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Something does not work"
+msgstr "정상적으로 작동하지 않음"
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Something is unclear or incorrect"
+msgstr "내용이 불명확하거나 잘못됨"
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Suggest an improvement"
+msgstr "개선 사항 제안"
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Translation issue"
+msgstr "번역 문제"
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Describe what went wrong, what you were doing, and what you expected to happen."
+msgstr "무엇이 잘못되었는지, 어떤 작업을 하고 계셨는지, 무엇을 예상하셨는지 설명해 주세요."
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Write a short description."
+msgstr "간단한 설명을 작성해 주세요."
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Send report"
+msgstr "신고 보내기"
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Cancel"
+msgstr "취소"
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Open the contact page on our website with this report prefilled."
+msgstr "이 신고 내용이 미리 채워진 상태로 공식 웹사이트의 문의 페이지를 엽니다."
+
+#: ui/components/popups/ReportFormPopup.tscn
+msgid "Close the report form without sending anything."
+msgstr "아무것도 보내지 않고 신고 양식을 닫습니다."
