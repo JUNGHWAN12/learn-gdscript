@@ -1,0 +1,58 @@
+name: "Deploy Web to GitHub Pages"
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "**.md"
+      - ".gitignore"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy Web
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - name: Restore cached build downloads
+        uses: actions/cache@v4
+        with:
+          path: .cache/build-downloads
+          key: export-build-downloads-${{ runner.os }}-${{ hashFiles('.env') }}
+
+      - name: Prepare build environment
+        env:
+          BUILD_GIT_COMMIT: ${{ github.sha }}
+          BUILD_GIT_BRANCH: "release"
+        run: |
+          python3 build.py prepare ci
+
+      - name: Export Web build
+        env:
+          BUILD_GIT_COMMIT: ${{ github.sha }}
+          BUILD_GIT_BRANCH: "release"
+          url: "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          GODOT_TEMPLATES_DIR: "${{ github.workspace }}/templates"
+        run: |
+          chmod +x godot_server.x86_64
+          python3 build.py export web
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build/web
+          clean: true

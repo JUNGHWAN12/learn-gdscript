@@ -9,6 +9,7 @@ const SHARED := preload("res://addons/learn_pot_extractor/Shared.gd")
 const DEFAULT_LOCALE := "en"
 
 const LOCALE_TO_LABEL := {
+	"ko": "한국어",
 	"fr": "Français",
 	"es": "Español",
 	"ja": "日本語",
@@ -87,7 +88,8 @@ func get_available_languages() -> Array:
 	for locale_code: String in overall_tr_progress:
 		var completeness: float = overall_tr_progress[locale_code]
 
-		if completeness < COMPLETENESS_THRESHOLD:
+		# Allow Korean (ko) to be selectable during development/translation
+		if locale_code != "ko" and completeness < COMPLETENESS_THRESHOLD:
 			continue
 
 		var language_name: String = LOCALE_TO_LABEL.get(locale_code, "")
