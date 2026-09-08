@@ -6,7 +6,7 @@ const I18N_ROOT := "res://i18n"
 const PO_EXTENSION := "po"
 const SHARED := preload("res://addons/learn_pot_extractor/Shared.gd")
 # OS.get_locale() is available, if we want to guess the language based on the OS setting.
-const DEFAULT_LOCALE := "en"
+const DEFAULT_LOCALE := "ko"
 
 const LOCALE_TO_LABEL := {
 	"ko": "한국어",
