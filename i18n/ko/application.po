@@ -275,8 +275,6 @@ msgstr "코드를 처음 상태로 되돌립니다."
 msgid "Show this practice's solution code."
 msgstr "이 실습의 풀이 코드를 표시합니다."
 
-msgid "Solution"
-msgstr "풀이"
 
 msgid "Toggle the output console's visibility."
 msgstr "출력 콘솔의 표시 여부를 전환합니다."
@@ -636,4 +634,3 @@ msgstr "초기화"
 
 msgid "Solution"
 msgstr "정답 보기"
-
